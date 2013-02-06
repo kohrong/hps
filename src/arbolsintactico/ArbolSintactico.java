@@ -1,19 +1,18 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package arbolsintactico;
 
-/**
- *
- * @author Josue
- */
+import arbolsintactico.Operators.SumOperator;
+import arbolsintactico.Operators.MultiplicationOperator;
+
 public class ArbolSintactico {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        Nodo operador1 = new Nodo(1);
+        Node constant1 = new Constant(1);
+        Node constant2 = new Constant(2);
+        Node constant3 = new Constant(3);
+        Node multiplicationOperator = new MultiplicationOperator(constant2, constant3);
+        Node sumOperator = new SumOperator(constant1, multiplicationOperator);
+        
+        System.out.println(sumOperator.getValue());
     }
 }
