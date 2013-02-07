@@ -11,5 +11,4 @@ public class Constant implements Node {
     public double getValue() {
         return value;
     }
-
 }
