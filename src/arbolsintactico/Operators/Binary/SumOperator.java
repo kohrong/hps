@@ -1,7 +1,7 @@
-package arbolsintactico.Operators;
+package arbolsintactico.Operators.Binary;
 
 import arbolsintactico.Node;
-import arbolsintactico.Operators.BinaryOperator;
+import arbolsintactico.Operators.Binary.BinaryOperator;
 
 public class SumOperator extends BinaryOperator {
 

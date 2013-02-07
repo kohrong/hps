@@ -1,7 +1,9 @@
 package arbolsintactico;
 
-import arbolsintactico.Operators.MultiplicationOperator;
-import arbolsintactico.Operators.SumOperator;
+import arbolsintactico.Data.Unknow;
+import arbolsintactico.Data.Constant;
+import arbolsintactico.Operators.Binary.MultiplicationOperator;
+import arbolsintactico.Operators.Binary.SumOperator;
 import static java.lang.System.out;
 
 public class SyntaxTree {

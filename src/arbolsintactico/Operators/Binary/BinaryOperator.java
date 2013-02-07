@@ -1,6 +1,7 @@
-package arbolsintactico.Operators;
+package arbolsintactico.Operators.Binary;
 
 import arbolsintactico.Node;
+import arbolsintactico.Operators.Operator;
 
 public abstract class BinaryOperator extends Operator {
     

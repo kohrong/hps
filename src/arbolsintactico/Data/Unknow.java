@@ -1,4 +1,6 @@
-package arbolsintactico;
+package arbolsintactico.Data;
+
+import arbolsintactico.Node;
 
 
 public class Unknow implements Node{
