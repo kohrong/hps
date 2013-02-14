@@ -16,6 +16,6 @@ public class SyntaxTree {
         Node multiplicationOperator = new MultiplicationOperator(constant2, xVariable);
         Node sumOperator = new SumOperator(constant1, multiplicationOperator);
         
-        out.println(sumOperator.getValue());
+        out.println(sumOperator.evaluate());
     }
 }

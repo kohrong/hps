@@ -11,6 +11,6 @@ public class UnknowTest {
 
     @Test
     public void CreateAUnknow(){
-        assertEquals(new Unknow(1.0, "unknow").getValue(), 1.0, 0);
+        assertEquals(new Unknow(1.0, "unknow").evaluate(), 1.0, 0);
     }
 }

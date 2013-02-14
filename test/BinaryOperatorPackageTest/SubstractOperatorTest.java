@@ -12,7 +12,7 @@ public class SubstractOperatorTest {
 
     @Test
     public void SubstractWithTwoConstants(){
-        assertEquals(new SubstractOperator(new Constant(1.0), new Constant(1.0)).getValue(), 0.0, 0);
+        assertEquals(new SubstractOperator(new Constant(1.0), new Constant(1.0)).evaluate(), 0.0, 0);
     }
     
     @Test
@@ -20,7 +20,7 @@ public class SubstractOperatorTest {
         Unknow firstUnknow = new Unknow(1.0, "firstUnknow");
         Unknow secondUnknow = new Unknow(1.0, "secondUnknow");
         
-        assertEquals(new SubstractOperator(firstUnknow, secondUnknow).getValue(), 0.0, 0);
+        assertEquals(new SubstractOperator(firstUnknow, secondUnknow).evaluate(), 0.0, 0);
     }
     
     @Test
@@ -28,6 +28,6 @@ public class SubstractOperatorTest {
         Unknow unknow = new Unknow(1.0, "unknow");
         Constant constant = new Constant(1.0);
         
-        assertEquals(new SubstractOperator(unknow, constant).getValue(), 0.0, 0);
+        assertEquals(new SubstractOperator(unknow, constant).evaluate(), 0.0, 0);
     }
 }

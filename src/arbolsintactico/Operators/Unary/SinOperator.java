@@ -9,8 +9,8 @@ public class SinOperator extends UnaryOperator{
     }
     
     @Override
-    public double getValue() {
-        return Math.sin(child.getValue());
+    public double evaluate() {
+        return Math.sin(child.evaluate());
     }
 
 }

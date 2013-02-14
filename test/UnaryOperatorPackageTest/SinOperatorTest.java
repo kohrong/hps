@@ -12,11 +12,11 @@ public class SinOperatorTest {
     
     @Test
     public void SinOperatorWithConstant(){
-        assertEquals(new SinOperator(new Constant((Math.PI)/2)).getValue(), 1.0, 0);
+        assertEquals(new SinOperator(new Constant((Math.PI)/2)).evaluate(), 1.0, 0);
     }
     
     @Test
     public void SinOperatorWithUnknow(){
-        assertEquals(new SinOperator(new Unknow((Math.PI)/2, "Incógnita")).getValue(), 1.0, 0);
+        assertEquals(new SinOperator(new Unknow((Math.PI)/2, "Incógnita")).evaluate(), 1.0, 0);
     }
 }

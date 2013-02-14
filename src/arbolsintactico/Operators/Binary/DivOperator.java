@@ -10,8 +10,8 @@ public class DivOperator extends BinaryOperator{
     }
 
     @Override
-    public double getValue() {
-        return (left.getValue()/right.getValue());
+    public double evaluate() {
+        return (left.evaluate()/right.evaluate());
     }
 
 }

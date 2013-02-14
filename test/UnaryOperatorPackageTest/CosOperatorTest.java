@@ -12,11 +12,11 @@ public class CosOperatorTest {
 
     @Test
     public void CosWithConstant(){
-        assertEquals(new CosOperator(new Constant(0.0)).getValue(), 1.0, 0);
+        assertEquals(new CosOperator(new Constant(0.0)).evaluate(), 1.0, 0);
     }
     
     @Test
     public void CosWithUnknow(){
-        assertEquals(new CosOperator(new Unknow(0.0, "unknow")).getValue(), 1.0, 0);
+        assertEquals(new CosOperator(new Unknow(0.0, "unknow")).evaluate(), 1.0, 0);
     }
 }

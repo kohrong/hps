@@ -13,7 +13,7 @@ public class Unknow implements Node{
     }
     
     @Override
-    public double getValue() {
+    public double evaluate() {
         return value;
     }
 

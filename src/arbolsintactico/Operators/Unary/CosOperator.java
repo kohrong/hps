@@ -10,7 +10,7 @@ public class CosOperator extends UnaryOperator{
     }
     
     @Override
-    public double getValue(){
-        return Math.cos(child.getValue());
+    public double evaluate(){
+        return Math.cos(child.evaluate());
     }
 }

@@ -11,6 +11,6 @@ public class ConstantTest {
 
     @Test
     public void CreateAConstant(){
-        assertEquals(new Constant(1.0).getValue(), 1.0, 0);
+        assertEquals(new Constant(1.0).evaluate(), 1.0, 0);
     }
 }

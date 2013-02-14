@@ -10,7 +10,7 @@ public class Constant implements Node {
     }
     
     @Override
-    public double getValue() {
+    public double evaluate() {
         return value;
     }
 }

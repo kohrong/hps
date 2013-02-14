@@ -12,7 +12,7 @@ public class UnaryOperator extends Operator{
     }
 
     @Override
-    public double getValue() {
+    public double evaluate() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
     
