@@ -1,8 +1,9 @@
 package UnaryOperatorPackageTest;
 
+import evaluator.nodes.Constant;
+import evaluator.nodes.Variable;
 import static org.junit.Assert.*;
 import arbolsintactico.Operators.Unary.CosOperator;
-import arbolsintactico.Data.*;
 import org.junit.Test;
 
 public class CosOperatorTest {
@@ -17,6 +18,6 @@ public class CosOperatorTest {
     
     @Test
     public void CosWithUnknow(){
-        assertEquals(new CosOperator(new Unknow(0.0, "unknow")).evaluate(), 1.0, 0);
+        assertEquals(new CosOperator(new Variable(0.0, "unknow")).evaluate(), 1.0, 0);
     }
 }

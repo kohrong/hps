@@ -1,7 +1,8 @@
 package DataPackageTest;
 
+import evaluator.Type;
 import static org.junit.Assert.*;
-import arbolsintactico.Data.Constant;
+import evaluator.nodes.Constant;
 import org.junit.Test;
 
 public class ConstantTest {
@@ -10,7 +11,8 @@ public class ConstantTest {
     }
 
     @Test
-    public void CreateAConstant(){
-        assertEquals(new Constant(1.0).evaluate(), 1.0, 0);
+    public void createConstant(){
+        Type<Double> value = new Type<Double>(1.0);
+        assertEquals((double) new Constant(value).evaluate(), 1.0, 0);
     }
 }

@@ -1,7 +1,8 @@
 package BinaryOperatorPackageTest;
 
-import arbolsintactico.Data.*;
-import arbolsintactico.Operators.Binary.SubstractOperator;
+import evaluator.nodes.Constant;
+import evaluator.nodes.Variable;
+import evaluator.operations.SubstractOperator;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
@@ -17,15 +18,15 @@ public class SubstractOperatorTest {
     
     @Test
     public void SubstractWithTwoUnknows(){
-        Unknow firstUnknow = new Unknow(1.0, "firstUnknow");
-        Unknow secondUnknow = new Unknow(1.0, "secondUnknow");
+        Variable firstUnknow = new Variable(1.0, "firstUnknow");
+        Variable secondUnknow = new Variable(1.0, "secondUnknow");
         
         assertEquals(new SubstractOperator(firstUnknow, secondUnknow).evaluate(), 0.0, 0);
     }
     
     @Test
     public void SubstractWithAConstantAndAUnknow(){
-        Unknow unknow = new Unknow(1.0, "unknow");
+        Variable unknow = new Variable(1.0, "unknow");
         Constant constant = new Constant(1.0);
         
         assertEquals(new SubstractOperator(unknow, constant).evaluate(), 0.0, 0);

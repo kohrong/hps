@@ -1,6 +1,7 @@
 package DataPackageTest;
 
-import arbolsintactico.Data.Unknow;
+import evaluator.Type;
+import evaluator.nodes.Variable;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
@@ -11,6 +12,7 @@ public class UnknowTest {
 
     @Test
     public void CreateAUnknow(){
-        assertEquals(new Unknow(1.0, "unknow").evaluate(), 1.0, 0);
+        Type<Double> value = new Type<Double>(1.0);
+        assertEquals((Double) new Variable(value, "unknow").evaluate(), 1.0, 0);
     }
 }

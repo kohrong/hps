@@ -1,7 +1,8 @@
 package BinaryOperatorPackageTest;
 
-import arbolsintactico.Data.*;
-import arbolsintactico.Operators.Binary.MultiplicationOperator;
+import evaluator.nodes.Constant;
+import evaluator.nodes.Variable;
+import evaluator.operations.MultiplicationOperator;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
@@ -17,14 +18,14 @@ public class MultiplicationOperatorTest {
     
     @Test
     public void MultiplicationOperatorWithTwoUnknows(){
-        Unknow firstUnknow = new Unknow(1.0, "firstUnknow");
-        Unknow secondUnknow = new Unknow(1.0, "secondUnknow");
+        Variable firstUnknow = new Variable(1.0, "firstUnknow");
+        Variable secondUnknow = new Variable(1.0, "secondUnknow");
         assertEquals(new MultiplicationOperator(firstUnknow, secondUnknow).evaluate(), 1.0, 0);
     }
     
     @Test
     public void MultiplicationWithAConstantAndAUnknow(){
-        Unknow unknow = new Unknow(1.0, "firstUnknow");
+        Variable unknow = new Variable(1.0, "firstUnknow");
         Constant constant = new Constant(1.0);
         assertEquals(new MultiplicationOperator(unknow, constant).evaluate(), 1.0, 0);
     }
